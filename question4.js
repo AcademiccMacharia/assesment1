@@ -1,8 +1,8 @@
 //JavaScript program to find the types of a given angle
 
-let angles = [45, 95, 89, 150];
+let angles = [45, 95, 89, 150, 254, 361];
 const findAngle = () => {
-    for (let i = 0; i <= angles.length; i++) {
+    for (let i = 0; i < angles.length; i++) {
         if (angles[i] > 0 && angles[i] < 90) {
             console.log("Acute angle");
         } else if (angles[i] === 90) {
@@ -11,7 +11,7 @@ const findAngle = () => {
             console.log("Obtuse angle");
         } else if (angles[i] === 180) {
             console.log("Straight angle");
-        } else if (angles[i] > 180 && angles[i] < 360) {
+        } else if (angles[i] > 180 && angles[i] < 361) {
             console.log("Reflex angle");
         } else {
             console.log("Complete angle")
